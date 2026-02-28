@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI calculator</title>
+    <link rel="stylesheet" href="bmi.css">
+</head>
+<body>
+    <div class="container">
+        
+        <div class="title">
+            <span>🤎</span>
+            <h2>BMI Calculator</h2>
+            <p>Know your body mass index</p>
+        </div>
+        
+    <div class="input">
+            
+            <div class="unitSystem">
+                <button id="metric" class="changeunit">Metric(kg, cm)</button>
+                <button id="imperial" class="changeunit">Imperial(lbs, in)</button>
+            </div>
+
+            <div class="item">
+                <label for="weight">Weight</label>
+                <br>
+                <input type="number" id="wght" placeholder="Enter your weight" required>
+            </div>
+
+            <div class="item">
+                <label for="height">Height</label>
+                <br>
+                <input type="number" id="hght" placeholder="Enter your height" required>
+            </div>
+
+            <div class="getbutton">
+                <button type="button" class="getBMI" id="getbtn">Get Your BMI</button>
+            </div>
+
+        </div>
+
+        <div class="output">
+            <output class="result1" id="opt1"></output>
+            <output class="result2" id="opt2"></output>
+        </div>
+
+        <div class="line"></div>
+        
+        <div class="foot">
+            <p class="footerTxt">BMI is a screening tool and not diagnostic of body fat or health</p>
+        </div>
+
+    </div>
+
+    <script src="bmi.js"></script>
+</body>
+</html>
